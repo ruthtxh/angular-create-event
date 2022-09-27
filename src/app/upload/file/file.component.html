@@ -1,0 +1,29 @@
+<i class="bi bi-file-earmark"></i>
+<span>{{file}}</span>
+<span class="note">{{note}}</span>
+
+<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalNote" *ngIf="note==''">
+    + Add note
+</button>
+<button class="btn btn-outline-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalNote" [disabled]="note==''">Edit</button>
+<button class="btn btn-outline-primary" type="button" [disabled]="note==''" (click)="removeNote()">Remove</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modalNote" tabindex="-1" aria-labelledby="modalNote" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalNoteLabel">Set meeting room</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="Note" ria-describedby="basic-addon1" #newNote>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" (click)="addNote(newNote.value)"
+                    data-bs-dismiss="modal">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

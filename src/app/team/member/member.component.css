@@ -1,0 +1,13 @@
+#box {
+    position: relative;
+    padding: 10px;
+    margin: 6px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  #icon {
+    position: absolute;
+    right: -9px;
+    top: -12px;
+  }

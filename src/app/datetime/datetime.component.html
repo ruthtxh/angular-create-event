@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row-datetime">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Day</label>
+            <app-datepicker (newDateEvent)="addDate($event)"></app-datepicker>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Hour</label>
+            <app-plus-minus-input-hours (newHourEvent)="addHour($event)"></app-plus-minus-input-hours>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Minute</label>
+            <app-plus-minus-input-mins (newMinsEvent)="addMins($event)"></app-plus-minus-input-mins>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Duration</label>
+            <app-duration (newDurationEvent)="addDuration($event)"></app-duration>
+        </div>
+    </div>
+    <div>
+        <i class="bi bi-check-circle-fill" style="color: #a7c97f"></i> This event will take place on the {{date}} from
+        {{hour}}:{{minsString}} {{amPm}} until {{endTime}}
+    </div>
+</div>

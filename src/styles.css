@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #f5f8f9;
+}
+span {
+    font-style: italic;
+}
+input:placeholder-shown {
+    font-style: italic;
+ }
+ input {
+    font-style: italic;
+ }

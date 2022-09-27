@@ -1,0 +1,16 @@
+
+
+.create-event {
+    padding:20px;
+}
+
+.row-create-event > div >div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.row-create-event > div >div >div{
+ margin-bottom: 50px;
+}

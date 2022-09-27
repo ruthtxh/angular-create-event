@@ -1,0 +1,8 @@
+.row-datetime {
+    display: flex;
+    
+}
+
+.row-datetime > div:not(:last-child) {
+    margin-right: 30px;
+}

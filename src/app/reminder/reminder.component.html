@@ -1,0 +1,7 @@
+<div class="container">
+    <h5>Set reminder</h5>
+    <select class="form-select" [(ngModel)]="reminder">
+        <option *ngFor="let item of items" [value]="item" (click)="setReminder(item)">{{item}} hours before
+            event</option>
+    </select>
+</div>

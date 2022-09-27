@@ -1,0 +1,8 @@
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" [(ngModel)]="hours[hour]">
+    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <button class="btn btn-outline-secondary btn-sm" type="button" id="top-button" (click)="increment(hour)">+</button>
+        <button class="btn btn-outline-secondary btn-sm" type="button" id="bottom-button" (click)="decrement(hour)">-</button>
+    </div>
+
+</div>

@@ -1,0 +1,13 @@
+#drop_zone {
+    color: #0d6efd;
+    border: 2px dashed #0d6efd;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.row{
+    margin-bottom: 20px;
+}

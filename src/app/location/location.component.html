@@ -1,0 +1,19 @@
+<div class="container">
+    <h5>Location</h5>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <span >{{location}}</span>
+                  
+                </div>
+
+                <div class="col-auto">
+                    <app-set-location (newLocationEvent)="addLocation($event)"></app-set-location>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

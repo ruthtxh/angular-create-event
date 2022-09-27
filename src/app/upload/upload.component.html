@@ -1,0 +1,20 @@
+<div class="container">
+    <h5>Upload attachments</h5>
+
+    <div class="row">
+        <div class="d-flex justify-content-between">
+            <app-file [file]="fileName" *ngIf="fileName !=''"></app-file>
+            <div *ngIf="fileName ==''"></div>
+            <input type="file" id="selectedFile" style="display: none;" (change)="uploadFile($event)" />
+            <button class="btn btn-primary" type="button" id="button-send-email"
+                onclick="document.getElementById('selectedFile').click();">+ Add files</button>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div id="drop_zone" (drop)="dropHandler($event);" (dragover)="dragOverHandler($event);">
+                <span><i><i class="bi bi-cloud-arrow-up"></i> You can also drop your files here</i></span>
+            </div>
+        </div>
+    </div>
+</div>

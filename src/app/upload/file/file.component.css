@@ -1,0 +1,13 @@
+
+.btn-outline-primary {
+  border: none;
+ }
+ .bi-file-earmark{
+    padding:6px;
+    border-radius: 2px;
+    color: #98c1fa;
+    background-color: #eff6ff;
+ }
+ .note {
+    margin-left: 10px;
+ }

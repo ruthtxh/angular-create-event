@@ -1,0 +1,3 @@
+<select class="form-select"  [(ngModel)]="duration"  (ngModelChange)="setDuration($event)">
+    <option *ngFor="let item of items" [value]="item" >{{item}}</option>
+</select>

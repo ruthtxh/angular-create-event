@@ -1,0 +1,13 @@
+<div class="container">
+    <h5>Add team members</h5>
+    <div class="row">
+        <div class="col">
+            <app-member *ngFor="let item of items" [item]="item[0]" [colour]="item[1]"></app-member>
+            <!-- <span *ngFor="let item of items"> {{item}}</span> -->
+
+        </div>
+        <div class="col-auto">
+            <app-set-team (newItemEvent)="addItem($event)"></app-set-team>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="input-group  input-group-sm mb-3">
+    <input type="text" class="form-control" placeholder="" aria-label="Example text with two button addons" [(ngModel)]="min">
+    <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+        <button class="btn btn-outline-secondary btn-sm" type="button" id="top-button" (click)="increment(min)">+</button>
+        <button class="btn btn-outline-secondary btn-sm" type="button" id="bottom-button" (click)="decrement(min)">-</button>
+    </div>
+
+</div>
